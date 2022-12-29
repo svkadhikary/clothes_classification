@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Classification App</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+      }
+      form {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      input[type="file"] {
+        font-size: 16px;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button[type="submit"] {
+        font-size: 16px;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #eee;
+        cursor: pointer;
+      }
+      video {
+        display: block;
+        margin: 0 auto;
+      }
+      button#capture-button {
+        display: block;
+        margin: 20px auto;
+        font-size: 16px;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #eee;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Upload an image to classify:</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" />
+      <input type="submit" value="Classify" />
+    </form>
+  </body>
+</html>
